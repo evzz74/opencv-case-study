@@ -1,0 +1,478 @@
+{
+  "input_path": "D:\\Users\\XIAO\\Desktop\\2026计算机视觉与图像处理-课堂案例\\案例3\\Dataset\\rebar_01.jpg",
+  "output_path": "D:\\Users\\XIAO\\Desktop\\2026计算机视觉与图像处理-课堂案例\\案例3\\output",
+  "image_width": 1500,
+  "image_height": 900,
+  "rectified": false,
+  "mm_per_pixel": null,
+  "parameters": {
+    "preprocess": {
+      "gaussian_kernel": 5,
+      "canny_low": 50,
+      "canny_high": 150,
+      "morphology_enabled": false,
+      "morphology_kernel": 3
+    },
+    "hough": {
+      "rho": 1.0,
+      "theta_degrees": 1.5,
+      "threshold": 110,
+      "min_line_length": 110,
+      "max_line_gap": 28
+    },
+    "grouping": {
+      "angle_tolerance_degrees": 12.0,
+      "max_direction_groups": 2,
+      "min_group_segments": 4,
+      "min_group_total_length": 400.0
+    },
+    "merging": {
+      "normal_cluster_distance_px": 16.0,
+      "duplicate_center_distance_px": 24.0,
+      "min_support_segments": 2,
+      "min_support_length": 110.0,
+      "min_axis_coverage_px": 130.0
+    },
+    "measurement": {
+      "anomaly_ratio": 0.2,
+      "low_sample_spacing_count": 3
+    },
+    "output": {
+      "save_debug": true,
+      "draw_raw_segments": true
+    }
+  },
+  "directions": [
+    {
+      "id": "A",
+      "name": "横向",
+      "angle_degrees": 165.9196054351397,
+      "rebars": [
+        {
+          "id": "A-01",
+          "direction_id": "A",
+          "p1": [
+            1499.0,
+            656.8369698462548
+          ],
+          "p2": [
+            533.5104420218346,
+            899.0
+          ],
+          "center": [
+            992.6497678002302,
+            783.8391787622437
+          ],
+          "angle_degrees": 165.9196054351397,
+          "normal_position": -1001.7839201565844,
+          "support_segments": 4,
+          "support_length": 953.0781712961679
+        },
+        {
+          "id": "A-02",
+          "direction_id": "A",
+          "p1": [
+            1499.0,
+            623.6527145938092
+          ],
+          "p2": [
+            401.20679552725085,
+            899.0
+          ],
+          "center": [
+            1163.72247690307,
+            707.7466545693164
+          ],
+          "angle_degrees": 165.9196054351397,
+          "normal_position": -969.5966752826604,
+          "support_segments": 7,
+          "support_length": 1668.424941540214
+        },
+        {
+          "id": "A-03",
+          "direction_id": "A",
+          "p1": [
+            1499.0,
+            559.589912267121
+          ],
+          "p2": [
+            145.79222352603313,
+            899.0
+          ],
+          "center": [
+            895.6075364215549,
+            710.932147037716
+          ],
+          "angle_degrees": 165.9196054351397,
+          "normal_position": -907.4586194452636,
+          "support_segments": 9,
+          "support_length": 2296.799605182452
+        },
+        {
+          "id": "A-04",
+          "direction_id": "A",
+          "p1": [
+            0.0,
+            881.7773055566172
+          ],
+          "p2": [
+            1499.0,
+            505.7997725000936
+          ],
+          "center": [
+            938.2041495939446,
+            646.4579715554664
+          ],
+          "angle_degrees": 165.9196054351397,
+          "normal_position": -855.2845872931844,
+          "support_segments": 4,
+          "support_length": 904.1504192120681
+        },
+        {
+          "id": "A-05",
+          "direction_id": "A",
+          "p1": [
+            0.0,
+            558.4172612644023
+          ],
+          "p2": [
+            1499.0,
+            182.43972820787872
+          ],
+          "center": [
+            842.803152803731,
+            347.0263004615957
+          ],
+          "angle_degrees": 165.9196054351397,
+          "normal_position": -541.6397925283738,
+          "support_segments": 255,
+          "support_length": 62368.02357555123
+        },
+        {
+          "id": "A-06",
+          "direction_id": "A",
+          "p1": [
+            0.0,
+            212.16841273772133
+          ],
+          "p2": [
+            845.9028072989424,
+            0.0
+          ],
+          "center": [
+            535.1498331796399,
+            77.94271954593266
+          ],
+          "angle_degrees": 165.9196054351397,
+          "normal_position": -205.79388036130456,
+          "support_segments": 2,
+          "support_length": 271.8124682108447
+        },
+        {
+          "id": "A-07",
+          "direction_id": "A",
+          "p1": [
+            0.0,
+            164.13691257894214
+          ],
+          "p2": [
+            654.4040808918361,
+            0.0
+          ],
+          "center": [
+            282.0021043523946,
+            93.40545459951474
+          ],
+          "angle_degrees": 165.9196054351397,
+          "normal_position": -159.2054713248052,
+          "support_segments": 5,
+          "support_length": 854.6306410248521
+        }
+      ],
+      "spacings": [
+        {
+          "from_rebar_id": "A-01",
+          "to_rebar_id": "A-02",
+          "pixels": 32.18724487392399,
+          "value": 32.18724487392399,
+          "unit": "px",
+          "relative_deviation": 0.4368531720479595,
+          "is_anomaly": true
+        },
+        {
+          "from_rebar_id": "A-02",
+          "to_rebar_id": "A-03",
+          "pixels": 62.13805583739679,
+          "value": 62.13805583739679,
+          "unit": "px",
+          "relative_deviation": 0.087165092166236,
+          "is_anomaly": false
+        },
+        {
+          "from_rebar_id": "A-03",
+          "to_rebar_id": "A-04",
+          "pixels": 52.174032152079235,
+          "value": 52.174032152079235,
+          "unit": "px",
+          "relative_deviation": 0.087165092166236,
+          "is_anomaly": false
+        },
+        {
+          "from_rebar_id": "A-04",
+          "to_rebar_id": "A-05",
+          "pixels": 313.6447947648105,
+          "value": 313.6447947648105,
+          "unit": "px",
+          "relative_deviation": 4.487517554463457,
+          "is_anomaly": true
+        },
+        {
+          "from_rebar_id": "A-05",
+          "to_rebar_id": "A-06",
+          "pixels": 335.8459121670693,
+          "value": 335.8459121670693,
+          "unit": "px",
+          "relative_deviation": 4.875947471066899,
+          "is_anomaly": true
+        },
+        {
+          "from_rebar_id": "A-06",
+          "to_rebar_id": "A-07",
+          "pixels": 46.58840903649937,
+          "value": 46.58840903649937,
+          "unit": "px",
+          "relative_deviation": 0.18489094450293894,
+          "is_anomaly": false
+        }
+      ],
+      "statistics": {
+        "count": 6,
+        "mean": 140.4297414719632,
+        "median": 57.15604399473801,
+        "min": 32.18724487392399,
+        "max": 335.8459121670693,
+        "unit": "px",
+        "anomaly_count": 3
+      },
+      "warnings": [
+        "未提供毫米标定，间距单位为像素。"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "横向",
+      "angle_degrees": 5.534425478070553,
+      "rebars": [
+        {
+          "id": "B-01",
+          "direction_id": "B",
+          "p1": [
+            1499.0,
+            28.644085452200333
+          ],
+          "p2": [
+            1203.3816501948597,
+            0.0
+          ],
+          "center": [
+            1266.481302192622,
+            6.114071826121048
+          ],
+          "angle_degrees": 5.534425478070553,
+          "normal_position": -116.05870759948421,
+          "support_segments": 4,
+          "support_length": 870.4311860527301
+        },
+        {
+          "id": "B-02",
+          "direction_id": "B",
+          "p1": [
+            0.0,
+            49.11900360891143
+          ],
+          "p2": [
+            1499.0,
+            194.3653461351821
+          ],
+          "center": [
+            820.396574905371,
+            128.61173337948168
+          ],
+          "angle_degrees": 5.534425478070553,
+          "normal_position": 48.89003198114215,
+          "support_segments": 118,
+          "support_length": 22441.94137157575
+        },
+        {
+          "id": "B-03",
+          "direction_id": "B",
+          "p1": [
+            0.0,
+            189.0186659457571
+          ],
+          "p2": [
+            1499.0,
+            334.26500847202783
+          ],
+          "center": [
+            715.8888952214518,
+            258.3850726743018
+          ],
+          "angle_degrees": 5.534425478070553,
+          "normal_position": 188.1375423797139,
+          "support_segments": 5,
+          "support_length": 1567.255424009024
+        },
+        {
+          "id": "B-04",
+          "direction_id": "B",
+          "p1": [
+            0.0,
+            233.9621002576801
+          ],
+          "p2": [
+            1499.0,
+            379.20844278395083
+          ],
+          "center": [
+            674.8707405983912,
+            299.35403271259133
+          ],
+          "angle_degrees": 5.534425478070553,
+          "normal_position": 232.87146976853487,
+          "support_segments": 3,
+          "support_length": 754.8820817810172
+        },
+        {
+          "id": "B-05",
+          "direction_id": "B",
+          "p1": [
+            0.0,
+            318.53518237993404
+          ],
+          "p2": [
+            1499.0,
+            463.7815249062047
+          ],
+          "center": [
+            775.2345073839399,
+            393.65191139772753
+          ],
+          "angle_degrees": 5.534425478070553,
+          "normal_position": 317.0503086273631,
+          "support_segments": 47,
+          "support_length": 10174.517239418466
+        },
+        {
+          "id": "B-06",
+          "direction_id": "B",
+          "p1": [
+            0.0,
+            537.2599714510467
+          ],
+          "p2": [
+            1499.0,
+            682.5063139773173
+          ],
+          "center": [
+            647.484677067493,
+            599.9983178058544
+          ],
+          "angle_degrees": 5.534425478070553,
+          "normal_position": 534.7554969878046,
+          "support_segments": 123,
+          "support_length": 25852.052355198957
+        },
+        {
+          "id": "B-07",
+          "direction_id": "B",
+          "p1": [
+            0.0,
+            770.7886828342527
+          ],
+          "p2": [
+            1323.1917657182596,
+            899.0
+          ],
+          "center": [
+            565.3913037413854,
+            825.572551389687
+          ],
+          "angle_degrees": 5.534425478070553,
+          "normal_position": 767.1955981540362,
+          "support_segments": 28,
+          "support_length": 4960.13656423395
+        }
+      ],
+      "spacings": [
+        {
+          "from_rebar_id": "B-01",
+          "to_rebar_id": "B-02",
+          "pixels": 164.94873958062635,
+          "value": 164.94873958062635,
+          "unit": "px",
+          "relative_deviation": 0.08448897441639112,
+          "is_anomaly": false
+        },
+        {
+          "from_rebar_id": "B-02",
+          "to_rebar_id": "B-03",
+          "pixels": 139.24751039857173,
+          "value": 139.24751039857173,
+          "unit": "px",
+          "relative_deviation": 0.08448897441639132,
+          "is_anomaly": false
+        },
+        {
+          "from_rebar_id": "B-03",
+          "to_rebar_id": "B-04",
+          "pixels": 44.73392738882097,
+          "value": 44.73392738882097,
+          "unit": "px",
+          "relative_deviation": 0.7058877130018532,
+          "is_anomaly": true
+        },
+        {
+          "from_rebar_id": "B-04",
+          "to_rebar_id": "B-05",
+          "pixels": 84.17883885882824,
+          "value": 84.17883885882824,
+          "unit": "px",
+          "relative_deviation": 0.44654913487865383,
+          "is_anomaly": true
+        },
+        {
+          "from_rebar_id": "B-05",
+          "to_rebar_id": "B-06",
+          "pixels": 217.70518836044147,
+          "value": 217.70518836044147,
+          "unit": "px",
+          "relative_deviation": 0.4313469569419664,
+          "is_anomaly": true
+        },
+        {
+          "from_rebar_id": "B-06",
+          "to_rebar_id": "B-07",
+          "pixels": 232.44010116623167,
+          "value": 232.44010116623167,
+          "unit": "px",
+          "relative_deviation": 0.5282246325004115,
+          "is_anomaly": true
+        }
+      ],
+      "statistics": {
+        "count": 6,
+        "mean": 147.20905095892007,
+        "median": 152.09812498959906,
+        "min": 44.73392738882097,
+        "max": 232.44010116623167,
+        "unit": "px",
+        "anomaly_count": 4
+      },
+      "warnings": [
+        "未提供毫米标定，间距单位为像素。"
+      ]
+    }
+  ],
+  "warnings": []
+}

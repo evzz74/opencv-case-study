@@ -1,0 +1,30 @@
+preprocess:
+  gaussian_kernel: 5
+  canny_low: 50
+  canny_high: 150
+  morphology_enabled: false
+  morphology_kernel: 3
+# Defaults tuned for the five selected dataset images.
+hough:
+  rho: 1.0
+  theta_degrees: 1.5
+  threshold: 110
+  min_line_length: 110
+  max_line_gap: 28
+grouping:
+  angle_tolerance_degrees: 12.0
+  max_direction_groups: 2
+  min_group_segments: 4
+  min_group_total_length: 400.0
+merging:
+  normal_cluster_distance_px: 16.0
+  duplicate_center_distance_px: 24.0
+  min_support_segments: 2
+  min_support_length: 110.0
+  min_axis_coverage_px: 130.0
+measurement:
+  anomaly_ratio: 0.20
+  low_sample_spacing_count: 3
+output:
+  save_debug: true
+  draw_raw_segments: true
